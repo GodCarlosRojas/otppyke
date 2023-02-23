@@ -48,3 +48,5 @@ jobs:
             aws-secret-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
             aws-session-token: ${{secrets.AWS_SESSION_TOKEN}}
             aws-region: us-east-1
+      - name: Listar buckets
+        run: aws s3pai list-buckets
